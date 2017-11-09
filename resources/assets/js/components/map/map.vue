@@ -1,9 +1,10 @@
 <template>
-    <div class="google-map" :id="mapName"></div>
+    <div class="map" :id="mapName"></div>
 </template>
+
 <script>
     export default {
-        name: 'google-map',
+        name: 'map',
         props: ['name'],
         data: function () {
             return {
@@ -43,8 +44,9 @@
         }
     };
 </script>
+
 <style scoped>
-    .google-map {
+    .map {
         width: 800px;
         height: 600px;
         margin: 0 auto;
